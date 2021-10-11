@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633944517125,
+  "lastUpdate": 1633944798120,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "14197de09ce83801237cd5b78fd36a51b1911ac7",
-          "message": "util: return undefined or null from toType (#1477)\n\n* toType: return null or undefined\r\n\r\n* turn off no-redeclare for better @typescript-eslint/no-redeclare that allows for function overloads\r\n\r\n* run prettier on config/eslint.js\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-09-20T10:58:50+02:00",
-          "tree_id": "0202b42700a3984c39f51cb03442b133db43e818",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/14197de09ce83801237cd5b78fd36a51b1911ac7"
-        },
-        "date": 1632128649424,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1873,
-            "range": "±4.44%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1922,
-            "range": "±1.97%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1913,
-            "range": "±1.62%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1799,
-            "range": "±1.71%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1601,
-            "range": "±9.80%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1873,
-            "range": "±1.61%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1846,
-            "range": "±1.66%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1852,
-            "range": "±1.43%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1782,
-            "range": "±1.94%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1341,
-            "range": "±13.80%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±19.69%",
             "unit": "ops/sec",
             "extra": "31 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "986eb64dde1fa3761b19749d3d6aab8b06b6cbc7",
+          "message": "block: small README update",
+          "timestamp": "2021-10-11T11:23:20+02:00",
+          "tree_id": "3c958e91d5d1204705fedfac812e9ff841981774",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/986eb64dde1fa3761b19749d3d6aab8b06b6cbc7"
+        },
+        "date": 1633944797439,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 22685,
+            "range": "±5.73%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 25341,
+            "range": "±2.19%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 20377,
+            "range": "±13.05%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 20269,
+            "range": "±11.15%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 24161,
+            "range": "±1.84%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 23057,
+            "range": "±3.56%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 10380,
+            "range": "±13.49%",
+            "unit": "ops/sec",
+            "extra": "32 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 19673,
+            "range": "±13.51%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 17430,
+            "range": "±12.59%",
+            "unit": "ops/sec",
+            "extra": "54 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 9206,
+            "range": "±17.54%",
+            "unit": "ops/sec",
+            "extra": "41 samples"
           }
         ]
       }
