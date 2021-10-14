@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634127735867,
+  "lastUpdate": 1634209868047,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e289a7825dd8d701204ecccfc90ad40111d58faf",
-          "message": "monorepo: dedupe prepublish script (#1481)\n\n* add config prepublish script\r\n\r\n* remove greenkeeper.json (greenkeeper no longer being run since 2020-06-03)",
-          "timestamp": "2021-09-21T09:31:30+02:00",
-          "tree_id": "005a82716a498017d54fcd7e22cf803e3db3971c",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e289a7825dd8d701204ecccfc90ad40111d58faf"
-        },
-        "date": 1632209799386,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 18391,
-            "range": "±5.45%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 19395,
-            "range": "±2.28%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 18991,
-            "range": "±2.38%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 14693,
-            "range": "±11.23%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 17709,
-            "range": "±3.12%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 18245,
-            "range": "±2.98%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 18010,
-            "range": "±3.67%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 15171,
-            "range": "±13.74%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 10215,
-            "range": "±16.75%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 16352,
-            "range": "±4.00%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±5.03%",
             "unit": "ops/sec",
             "extra": "63 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "58e5e0d059d55965b349c922af0ca6177bcb7f26",
+          "message": "Util: New Release v7.1.3 (#1525), rewrite of ethjs-util toUtf8 method, additional tests\n\n* util: rewrote toUtf8 method and removed from ethjs-util internal.ts import, added code docs, expanded tests\r\n\r\n* util: throw in toUtf8() method on uneven hex string input\r\n\r\n* util -> release: bumped version to v7.1.3, added CHANGELOG entry, updated upstream dependency versions\r\n\r\n* util -> release: rebuild documentation\r\n\r\n* Updated package-lock.json\r\n\r\n* Apply suggestions from code review\r\n\r\nchangelog grammar improvements\r\n\r\n* util -> release: added README note on ethjs-util internalization, temporary module doc links fix\r\n\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
+          "timestamp": "2021-10-14T13:04:35+02:00",
+          "tree_id": "713e316ce01252008d2e291b4d79e02ce18ff907",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/58e5e0d059d55965b349c922af0ca6177bcb7f26"
+        },
+        "date": 1634209867344,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 17549,
+            "range": "±7.77%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 18630,
+            "range": "±3.70%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 18387,
+            "range": "±3.91%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 14098,
+            "range": "±14.48%",
+            "unit": "ops/sec",
+            "extra": "52 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 17848,
+            "range": "±4.50%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 17950,
+            "range": "±4.11%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 17433,
+            "range": "±4.11%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 16840,
+            "range": "±6.86%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 7009,
+            "range": "±14.18%",
+            "unit": "ops/sec",
+            "extra": "41 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 16669,
+            "range": "±5.30%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
           }
         ]
       }
