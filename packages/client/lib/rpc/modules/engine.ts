@@ -1,6 +1,6 @@
 import { Block, HeaderData } from '@ethereumjs/block'
 import { TransactionFactory, TypedTransaction } from '@ethereumjs/tx'
-import { Address, BN, toBuffer, toType, TypeOutput, bufferToHex, intToHex } from 'ethereumjs-util'
+import { Address, toBuffer, toType, TypeOutput, bufferToHex, intToHex } from 'ethereumjs-util'
 import { BaseTrie as Trie } from 'merkle-patricia-tree'
 import { encode } from 'rlp'
 import { middleware, validators } from '../validation'
@@ -98,6 +98,7 @@ const blockToExecutionPayload = (block: Block, random: string) => {
  * Times out after 10s.
  * @throws {@link EngineError.UnknownHeader}
  */
+/*
 const getBlockFromPeers = async (hash: Buffer, chain: Chain, service: EthereumService) => {
   const timeout = setTimeout(() => {
     throw EngineError.UnknownHeader
@@ -124,17 +125,13 @@ const getBlockFromPeers = async (hash: Buffer, chain: Chain, service: EthereumSe
   }
   throw EngineError.UnknownHeader
 }
+/*
 
 /**
- * Searches for a block in {@link ValidBlocks}, then the blockchain, then the network.
+ * Searches for a block in {@link ValidBlocks} then the blockchain.
  * @throws {@link EngineError.UnknownHeader}
  */
-const findBlock = async (
-  hash: Buffer,
-  validBlocks: ValidBlocks,
-  chain: Chain,
-  service: EthereumService
-) => {
+const findBlock = async (hash: Buffer, validBlocks: ValidBlocks, chain: Chain) => {
   const parentBlock = validBlocks.get(hash.toString('hex'))
   if (parentBlock) {
     return parentBlock
@@ -144,8 +141,10 @@ const findBlock = async (
       const parentBlock = await chain.getBlock(hash)
       return parentBlock
     } catch (error) {
-      // block not found, request from network (devp2p)
-      return await getBlockFromPeers(hash, chain, service)
+      // alternatively if around merge transition,
+      // request pre-merge blocks from network (devp2p)
+      // return await getBlockFromPeers(hash, chain, service)
+      throw EngineError.UnknownHeader
     }
   }
 }
@@ -157,21 +156,19 @@ const recursivelyFindParents = async (
   vmHeadHash: Buffer,
   parentHash: Buffer,
   validBlocks: ValidBlocks,
-  chain: Chain,
-  service: EthereumService
+  chain: Chain
 ) => {
   if (parentHash.equals(vmHeadHash)) {
     return []
   }
   const parentBlocks = []
-  const block = await findBlock(parentHash, validBlocks, chain, service)
+  const block = await findBlock(parentHash, validBlocks, chain)
   parentBlocks.push(block)
   while (!vmHeadHash.equals(parentBlocks[parentBlocks.length - 1].header.parentHash)) {
     const block: Block = await findBlock(
       parentBlocks[parentBlocks.length - 1].header.parentHash,
       validBlocks,
-      chain,
-      service
+      chain
     )
     parentBlocks.push(block)
   }
@@ -304,8 +301,7 @@ export class Engine {
           vmHead.hash(),
           parentHash,
           this.validBlocks,
-          this.chain,
-          this.service
+          this.chain
         )
 
         for (const parent of parentBlocks) {
@@ -434,10 +430,6 @@ export class Engine {
     const [payloadData] = params
     const { blockNumber: number, receiptRoot: receiptTrie, transactions } = payloadData
 
-    if (new BN(toBuffer(number)).gt(this.chain.headers.height.addn(1))) {
-      return { status: Status.SYNCING }
-    }
-
     try {
       const txs = []
       for (const [index, serializedTx] of transactions.entries()) {
@@ -477,13 +469,17 @@ export class Engine {
         vmHeadHash,
         block.header.parentHash,
         this.validBlocks,
-        this.chain,
-        this.service
+        this.chain
       )
 
       for (const parent of parentBlocks) {
         await vmCopy.runBlock({ block: parent })
         await vmCopy.blockchain.putBlock(parent)
+      }
+
+      const maxHeight = (await vmCopy.blockchain.getLatestHeader()).number.addn(1)
+      if (block.header.number.gt(maxHeight)) {
+        return { status: Status.SYNCING }
       }
 
       try {
@@ -563,8 +559,7 @@ export class Engine {
       vmHeadHash,
       headBlock.header.parentHash,
       this.validBlocks,
-      this.chain,
-      this.service
+      this.chain
     )
 
     const blocks = [...parentBlocks, headBlock]
