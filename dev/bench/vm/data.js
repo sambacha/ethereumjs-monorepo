@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634848021976,
+  "lastUpdate": 1634928150368,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "b7b5be4e56d4726cdedbb114d8a6bdc0e0ed2c44",
-          "message": "Client: README Overhaul (#1488)",
-          "timestamp": "2021-09-22T20:52:51-07:00",
-          "tree_id": "401468017173e032969a94df22d4b3c081388713",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/b7b5be4e56d4726cdedbb114d8a6bdc0e0ed2c44"
-        },
-        "date": 1632371180241,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 16692,
-            "range": "±6.40%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 16796,
-            "range": "±4.10%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 17576,
-            "range": "±3.28%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 14015,
-            "range": "±11.05%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 13651,
-            "range": "±12.39%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 16709,
-            "range": "±3.42%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 16739,
-            "range": "±3.60%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 16102,
-            "range": "±4.22%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 11994,
-            "range": "±15.43%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 10136,
-            "range": "±18.72%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±6.23%",
             "unit": "ops/sec",
             "extra": "72 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "125e210cdcc412f901420ef038f230a6d060cb51",
+          "message": "client/vm: small fixes (#1541)\n\n* fix generateGenesis setting toBalance, don't overwrite codeHash and stateRoot, tidy\r\n\r\n* fix chalk output, update chalk to latest, tidy file and add typedocs\r\n\r\n* attempt to resolve peer:error event handler memory leak by removing bound listener after disconnect, tidy\r\n\r\n* fix new webpack polyfill errors from node-fetch, which we don't use so can safely pass false\r\n\r\n* nit: more stateManager generateGenesis code tidying\r\n\r\n* update multiaddrs to latest to fix libp2p so it doesn't bring node-fetch into webpack/karma",
+          "timestamp": "2021-10-22T20:37:33+02:00",
+          "tree_id": "3a7ae16642c89e2738b3100bace4db724d2cd7c9",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/125e210cdcc412f901420ef038f230a6d060cb51"
+        },
+        "date": 1634928149716,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 24542,
+            "range": "±5.15%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 25896,
+            "range": "±1.96%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 19766,
+            "range": "±14.44%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 23363,
+            "range": "±2.08%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 24466,
+            "range": "±1.97%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 23048,
+            "range": "±9.21%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 11834,
+            "range": "±18.52%",
+            "unit": "ops/sec",
+            "extra": "45 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 22437,
+            "range": "±2.31%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 14914,
+            "range": "±13.90%",
+            "unit": "ops/sec",
+            "extra": "42 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 17393,
+            "range": "±15.60%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
           }
         ]
       }
