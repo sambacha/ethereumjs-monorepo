@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634928192290,
+  "lastUpdate": 1635196465334,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "b7b5be4e56d4726cdedbb114d8a6bdc0e0ed2c44",
-          "message": "Client: README Overhaul (#1488)",
-          "timestamp": "2021-09-22T20:52:51-07:00",
-          "tree_id": "401468017173e032969a94df22d4b3c081388713",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/b7b5be4e56d4726cdedbb114d8a6bdc0e0ed2c44"
-        },
-        "date": 1632371236512,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 11442,
-            "range": "±14.18%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 12868,
-            "range": "±3.44%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 12239,
-            "range": "±3.83%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 6832,
-            "range": "±24.57%",
-            "unit": "ops/sec",
-            "extra": "47 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 12590,
-            "range": "±4.37%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1027,
-            "range": "±8.21%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 133,
-            "range": "±83.36%",
-            "unit": "ops/sec",
-            "extra": "47 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 87.24,
-            "range": "±50.78%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 11.12,
-            "range": "±110.33%",
-            "unit": "ops/sec",
-            "extra": "28 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±11.12%",
             "unit": "ops/sec",
             "extra": "27 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "85b4253208a930b5e0ca6fae1952e951e2a578a7",
+          "message": "Tx, Block, VM: Consistent Error Context for Error Messages (#1540)\n\n* block: added consistent error context to error messages\r\n\r\n* blockchain: fixed test\r\n\r\n* block: internalized _errorPostfix creation to only call hash() function in error case, made _error() protected (do not call from the outside but keep extensible), more robust error case hash creation\r\n\r\n* tx: added consistent error context for error msgs to all tx types\r\n\r\n* vm -> runBlock(): added consistent error context to error messages\r\n\r\n* tx, block: separate msg creation and error object instantiation on error annotation for cleaner stack trace\r\n\r\n* tx, block, vm: added public errorStr() methods to block and tx for a compact error representation of the object, adding consistent error context to VM.runTx()\r\n\r\n* tx: hardhat E2E error msg fix",
+          "timestamp": "2021-10-25T23:09:07+02:00",
+          "tree_id": "a83c4f0cc35f542ce40c235f03842d74e32cc92e",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/85b4253208a930b5e0ca6fae1952e951e2a578a7"
+        },
+        "date": 1635196463782,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 12325,
+            "range": "±12.25%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 14060,
+            "range": "±2.19%",
+            "unit": "ops/sec",
+            "extra": "70 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12716,
+            "range": "±3.40%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 7485,
+            "range": "±19.88%",
+            "unit": "ops/sec",
+            "extra": "44 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 13342,
+            "range": "±3.75%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1065,
+            "range": "±7.33%",
+            "unit": "ops/sec",
+            "extra": "59 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 132,
+            "range": "±84.55%",
+            "unit": "ops/sec",
+            "extra": "39 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 113,
+            "range": "±11.84%",
+            "unit": "ops/sec",
+            "extra": "54 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 10.26,
+            "range": "±121.02%",
+            "unit": "ops/sec",
+            "extra": "25 samples"
           }
         ]
       }
