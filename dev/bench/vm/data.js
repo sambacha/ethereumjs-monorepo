@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635362968965,
+  "lastUpdate": 1635364669542,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5b86cc169686c30e052bc0b77442aacd91a96b2f",
-          "message": "client: add dev param to start devnet with miner (#1492)\n\n* client: add dev param to start ephemeral devnet with miner\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
-          "timestamp": "2021-09-27T21:45:39-04:00",
-          "tree_id": "f31a11439c1266bef287b6bfe7208b1a5f08de7e",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5b86cc169686c30e052bc0b77442aacd91a96b2f"
-        },
-        "date": 1632793861558,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 24260,
-            "range": "±4.97%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 24932,
-            "range": "±2.14%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 19484,
-            "range": "±11.95%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 21896,
-            "range": "±4.52%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 23130,
-            "range": "±2.49%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 21773,
-            "range": "±4.18%",
-            "unit": "ops/sec",
-            "extra": "67 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 11263,
-            "range": "±13.95%",
-            "unit": "ops/sec",
-            "extra": "36 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 18870,
-            "range": "±9.84%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 19076,
-            "range": "±8.40%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 8668,
-            "range": "±15.07%",
-            "unit": "ops/sec",
-            "extra": "38 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±22.21%",
             "unit": "ops/sec",
             "extra": "44 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "77563348+emersonmacro@users.noreply.github.com",
+            "name": "emersonmacro",
+            "username": "emersonmacro"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e72d5eb4f6484e843a0ee4c0deff8cae78ecee0f",
+          "message": "tx: add getDataFee to tx cache (#1532)\n\n* tx: add getDataFee to tx cache\r\n\r\n* tx: added tests for getDataFee when frozen and not frozen\r\n\r\n* tx: cleanup in baseTransaction\r\n\r\n* tx: add getDataFee caching for legacy tx\r\n\r\n* tx: remove unneeded return statements\r\n\r\n* tx: invalidate cached dataFee on hardfork change\r\n\r\n* tx: add cache invalidation for all tx types\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-10-27T21:51:54+02:00",
+          "tree_id": "2e869eae270b2c60050d7c113b36e8cb27114c25",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e72d5eb4f6484e843a0ee4c0deff8cae78ecee0f"
+        },
+        "date": 1635364668977,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 14957,
+            "range": "±3.43%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 14231,
+            "range": "±6.47%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 14995,
+            "range": "±3.26%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 14551,
+            "range": "±4.00%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 11379,
+            "range": "±14.95%",
+            "unit": "ops/sec",
+            "extra": "59 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 13637,
+            "range": "±4.21%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 14218,
+            "range": "±4.14%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 14141,
+            "range": "±4.25%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 14304,
+            "range": "±4.37%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 13451,
+            "range": "±6.43%",
+            "unit": "ops/sec",
+            "extra": "70 samples"
           }
         ]
       }
