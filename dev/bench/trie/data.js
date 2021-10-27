@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635323275902,
+  "lastUpdate": 1635362994885,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "jochembrouwer96@gmail.com",
-            "name": "Jochem Brouwer",
-            "username": "jochem-brouwer"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "36d4a06a9590644b2cf20262b74bd53570cf20cd",
-          "message": "Ethash: add CPU miner (#1475)\n\n* ethash: add cpu miner\r\n\r\n* ethash: add miner tests, expand miner features\r\n\r\n* ethash: address type check using instanceof\r\nethash: copy common when mining\r\nethash: add common copy test\r\n\r\n* ethash: add common as devDependency\r\n\r\n* ethash: moved @ethereumjs/block library to dependencies\r\n\r\n* ethash -> miner: do not expose class members as public\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-09-23T14:18:17+02:00",
-          "tree_id": "ffb54b15304f5ebfc9a8706843b02dc0f854d4f8",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/36d4a06a9590644b2cf20262b74bd53570cf20cd"
-        },
-        "date": 1632399804566,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 15202,
-            "range": "±12.32%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 16937,
-            "range": "±1.53%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 10872,
-            "range": "±16.77%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 11394,
-            "range": "±29.26%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 15991,
-            "range": "±2.59%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1118,
-            "range": "±6.76%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 109,
-            "range": "±110.81%",
-            "unit": "ops/sec",
-            "extra": "29 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 127,
-            "range": "±8.45%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.48,
-            "range": "±131.71%",
-            "unit": "ops/sec",
-            "extra": "23 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±122.18%",
             "unit": "ops/sec",
             "extra": "16 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fcbee4a0f1f9d0f055caf2cb7190f363bb783bca",
+          "message": "Client: More Fetcher Improvements (#1545)\n\n* client -> Fetcher: improved reenqueue debug messages\r\n\r\n* client: aligned VM execution in SYNC_FETCHER_FETCHED event\r\n\r\n* client -> Fetcher: fixed tests\r\n\r\n* client -> Fetcher: set max write queue size to 4 by default to not overload the client on the request side (particularly on growing execution load)\r\n\r\n* client -> executeBlocks option: added special verbose tx execution mode activated with --execute_blocks=BLOCK_NR[*] (useful for debugging on slow txs)",
+          "timestamp": "2021-10-27T21:24:39+02:00",
+          "tree_id": "c918d6e3f483ab535494381ce1594e6e66caba99",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/fcbee4a0f1f9d0f055caf2cb7190f363bb783bca"
+        },
+        "date": 1635362993831,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 10669,
+            "range": "±12.49%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 12173,
+            "range": "±3.14%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 11334,
+            "range": "±3.95%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 6901,
+            "range": "±19.31%",
+            "unit": "ops/sec",
+            "extra": "53 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 11760,
+            "range": "±22.85%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1121,
+            "range": "±7.57%",
+            "unit": "ops/sec",
+            "extra": "62 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 134,
+            "range": "±83.98%",
+            "unit": "ops/sec",
+            "extra": "42 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 104,
+            "range": "±28.14%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 10.85,
+            "range": "±109.05%",
+            "unit": "ops/sec",
+            "extra": "27 samples"
           }
         ]
       }
