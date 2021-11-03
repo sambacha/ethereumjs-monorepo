@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635870161460,
+  "lastUpdate": 1635959098115,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "jochembrouwer96@gmail.com",
-            "name": "Jochem Brouwer",
-            "username": "jochem-brouwer"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "531e4b3a1843833b3015ab185fc610f4f2da5d67",
-          "message": "Tx/Util: ensure only integers are allowed as input (#1500)\n\n* util: verify intToBuffer/intToHex inputs are integers\r\ntx: add checks to verify decimal values cannot be used\r\n\r\n* util/tx: check max safe integer, add string tests\r\n\r\n* util: simplify intToHex\r\n\r\n* tx: add test cases\r\n\r\n* tx/util: add test cases\r\n\r\n* tx: 1 more test failing input test case\r\n\r\n* tx: remove console.log\r\n\r\n* Update packages/util/test/bytes.spec.ts\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\n\r\n* Update packages/util/test/bytes.spec.ts\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\n\r\nCo-authored-by: Gabriel Rocheleau <contact@rockwaterweb.com>\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-09-30T00:06:39+02:00",
-          "tree_id": "e2ce055bf1b6a2c53a38ada77f0198fed1dcea3d",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/531e4b3a1843833b3015ab185fc610f4f2da5d67"
-        },
-        "date": 1632953530074,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 11425,
-            "range": "±12.26%",
-            "unit": "ops/sec",
-            "extra": "64 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 12842,
-            "range": "±2.99%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 12378,
-            "range": "±3.45%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 7242,
-            "range": "±26.38%",
-            "unit": "ops/sec",
-            "extra": "45 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 13399,
-            "range": "±3.75%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1119,
-            "range": "±6.72%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 130,
-            "range": "±86.80%",
-            "unit": "ops/sec",
-            "extra": "37 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 120,
-            "range": "±16.34%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.81,
-            "range": "±120.04%",
-            "unit": "ops/sec",
-            "extra": "23 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±11.44%",
             "unit": "ops/sec",
             "extra": "33 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5a0ab3012a9cefc8d384eb5edcbd524cabca4c73",
+          "message": "vm benchmarks: skip blocks reporting false positives for alert threshold (#1546)\n\n* increase vm benchmarks threshold from 200% to 270% to cover false positives\r\n\r\n* add prettier.config.js to root, run on config and workflow files\r\n\r\n* Revert \"increase vm benchmarks threshold from 200% to 270% to cover false positives\"\r\n\r\nThis reverts commit 1621ae520e99a04e9e51ca16033c8e1f05e84855.\r\n\r\n* skip blocks that frequently trip alert threshold",
+          "timestamp": "2021-11-03T18:00:04+01:00",
+          "tree_id": "c8a3dd69581656488191363558d5668254318c0a",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5a0ab3012a9cefc8d384eb5edcbd524cabca4c73"
+        },
+        "date": 1635959097480,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 15043,
+            "range": "±13.42%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 16313,
+            "range": "±1.99%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 11648,
+            "range": "±14.95%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 8904,
+            "range": "±28.24%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 15278,
+            "range": "±2.36%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1132,
+            "range": "±7.01%",
+            "unit": "ops/sec",
+            "extra": "59 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 114,
+            "range": "±104.71%",
+            "unit": "ops/sec",
+            "extra": "34 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 107,
+            "range": "±27.22%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 9.83,
+            "range": "±127.79%",
+            "unit": "ops/sec",
+            "extra": "25 samples"
           }
         ]
       }
