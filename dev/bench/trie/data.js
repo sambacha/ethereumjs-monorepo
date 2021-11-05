@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635959098115,
+  "lastUpdate": 1636101224234,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6e41fb32a4916cff53ec940d94e3c238f3c20d5f",
-          "message": "Util v7.1.2 and Tx v3.3.2 Releases (#1501)\n\n* util -> release: bumped version to v7.1.2, added CHANGELOG entry, updated upstream dependency versions\r\n\r\n* util -> release: rebuild documentation\r\n\r\n* tx -> release: bumped version to v3.3.2, added CHANGELOG entry, updated upstream dependency versions\r\n\r\n* monorepo: updated package-lock.json\r\n\r\n* util -> release: updated exclude directive in typedoc.js, rebuild documentation",
-          "timestamp": "2021-09-30T01:26:36+02:00",
-          "tree_id": "e235ea6f73852f5fc35377ac443788383f569998",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/6e41fb32a4916cff53ec940d94e3c238f3c20d5f"
-        },
-        "date": 1632958358496,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 11680,
-            "range": "±11.71%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 13733,
-            "range": "±2.68%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 12345,
-            "range": "±3.60%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 6367,
-            "range": "±22.46%",
-            "unit": "ops/sec",
-            "extra": "42 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 14271,
-            "range": "±3.72%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1094,
-            "range": "±6.71%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 133,
-            "range": "±88.27%",
-            "unit": "ops/sec",
-            "extra": "41 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 114,
-            "range": "±25.56%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 24.63,
-            "range": "±13.36%",
-            "unit": "ops/sec",
-            "extra": "25 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±127.79%",
             "unit": "ops/sec",
             "extra": "25 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c230e51439a8dc2f6bd358e43e933fc126e6986e",
+          "message": "Common: add custom params for Optimism L2 (#1554)\n\n* Add custom params for Optimism L2\r\n\r\n* Note on London hardfork\r\n\r\n* Requested fixes\r\n\r\n* Edit note",
+          "timestamp": "2021-11-05T09:29:24+01:00",
+          "tree_id": "e8be74da857aa6c6e4b3ebdb86b196689519a395",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/c230e51439a8dc2f6bd358e43e933fc126e6986e"
+        },
+        "date": 1636101223592,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 18933,
+            "range": "±11.44%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 19648,
+            "range": "±2.53%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12003,
+            "range": "±22.11%",
+            "unit": "ops/sec",
+            "extra": "51 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 16714,
+            "range": "±2.36%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 17433,
+            "range": "±3.42%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1324,
+            "range": "±5.73%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 95.09,
+            "range": "±117.87%",
+            "unit": "ops/sec",
+            "extra": "21 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 152,
+            "range": "±7.11%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 8.33,
+            "range": "±155.09%",
+            "unit": "ops/sec",
+            "extra": "12 samples"
           }
         ]
       }
