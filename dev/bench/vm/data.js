@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635959099815,
+  "lastUpdate": 1636101265401,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e8979852695df7fa7c33858e744ce185f985aade",
-          "message": "client: merge related work (#1493)",
-          "timestamp": "2021-09-30T06:49:49-07:00",
-          "tree_id": "af3b95b56bdbc8919110dbf8ab8d94e59a858ac8",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e8979852695df7fa7c33858e744ce185f985aade"
-        },
-        "date": 1633010116578,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 18442,
-            "range": "±6.12%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 18862,
-            "range": "±2.52%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 19186,
-            "range": "±2.88%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 14447,
-            "range": "±11.29%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 17649,
-            "range": "±3.39%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 18852,
-            "range": "±2.95%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 18661,
-            "range": "±3.12%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 15430,
-            "range": "±12.05%",
-            "unit": "ops/sec",
-            "extra": "67 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 10690,
-            "range": "±16.55%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 16931,
-            "range": "±4.06%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2790,6 +2696,72 @@ window.BENCHMARK_DATA = {
             "name": "Block 9422911",
             "value": 18242,
             "range": "±4.57%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c230e51439a8dc2f6bd358e43e933fc126e6986e",
+          "message": "Common: add custom params for Optimism L2 (#1554)\n\n* Add custom params for Optimism L2\r\n\r\n* Note on London hardfork\r\n\r\n* Requested fixes\r\n\r\n* Edit note",
+          "timestamp": "2021-11-05T09:29:24+01:00",
+          "tree_id": "e8be74da857aa6c6e4b3ebdb86b196689519a395",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/c230e51439a8dc2f6bd358e43e933fc126e6986e"
+        },
+        "date": 1636101264795,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 21618,
+            "range": "±3.93%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 18977,
+            "range": "±8.82%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 20632,
+            "range": "±3.15%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 19767,
+            "range": "±5.58%",
+            "unit": "ops/sec",
+            "extra": "70 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 12123,
+            "range": "±19.71%",
+            "unit": "ops/sec",
+            "extra": "45 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 18675,
+            "range": "±3.70%",
             "unit": "ops/sec",
             "extra": "68 samples"
           }
