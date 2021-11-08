@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1636101265401,
+  "lastUpdate": 1636387423607,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "05f6f7a904302129ea1c89d22efcb043d92881e1",
-          "message": "client: add RPC help (--helprpc) (#1505)",
-          "timestamp": "2021-10-01T22:56:22+02:00",
-          "tree_id": "64fa970c0f2ce20a0759e3672dbd70b7adc0a14d",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/05f6f7a904302129ea1c89d22efcb043d92881e1"
-        },
-        "date": 1633122083231,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 24019,
-            "range": "±6.44%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 25727,
-            "range": "±1.93%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 21582,
-            "range": "±9.39%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 19509,
-            "range": "±16.66%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 24172,
-            "range": "±2.37%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 23212,
-            "range": "±4.11%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 12100,
-            "range": "±15.10%",
-            "unit": "ops/sec",
-            "extra": "38 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 21050,
-            "range": "±3.20%",
-            "unit": "ops/sec",
-            "extra": "67 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 16251,
-            "range": "±12.25%",
-            "unit": "ops/sec",
-            "extra": "52 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 12898,
-            "range": "±21.54%",
-            "unit": "ops/sec",
-            "extra": "53 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2764,6 +2670,72 @@ window.BENCHMARK_DATA = {
             "range": "±3.70%",
             "unit": "ops/sec",
             "extra": "68 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "309988c2371782585e50015aa41d1e8600604e80",
+          "message": "Common, Block: Add arrowGlacier HF (#1527)\n\n* common/vm: add arrowGlacier HF\r\n\r\n* common: fix tests\r\n\r\n* common: fix eip 4345 minimum hardfork\r\n\r\n* block: added ArrowGlacier difficulty tests\r\n\r\n* Common: added forkHash for ArrowGlacier HF\r\n\r\nCo-authored-by: holgerd77 <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-11-08T16:59:09+01:00",
+          "tree_id": "e40d4faa1aad3cdabb60e64a7e7f44d784433359",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/309988c2371782585e50015aa41d1e8600604e80"
+        },
+        "date": 1636387422939,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 23100,
+            "range": "±8.92%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 22461,
+            "range": "±7.14%",
+            "unit": "ops/sec",
+            "extra": "70 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 24040,
+            "range": "±2.65%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 17062,
+            "range": "±14.65%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 16811,
+            "range": "±25.77%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 21366,
+            "range": "±2.96%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
           }
         ]
       }
