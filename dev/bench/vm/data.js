@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1636445113366,
-  "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
+  "lastUpdate": 1651885628450,
+  "repoUrl": "https://github.com/sambacha/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "pilll.PL22@gmail.com",
-            "name": "v 1 r t l",
-            "username": "talentlessguy"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "3fefc5f9a43baebc2f77388a533fc06dd534adf8",
-          "message": "feat(vm): use promisify from node.js (#1514)\n\n* feat: use promisify from node.js\r\n* chore: remove util.promisify from dependencies",
-          "timestamp": "2021-10-03T17:20:23-07:00",
-          "tree_id": "61bbda057bb9c7dd7f3fcd4cdf7528d663599f16",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/3fefc5f9a43baebc2f77388a533fc06dd534adf8"
-        },
-        "date": 1633308071979,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 13856,
-            "range": "±4.28%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 13434,
-            "range": "±4.68%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 14072,
-            "range": "±3.33%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 14057,
-            "range": "±3.56%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 10620,
-            "range": "±16.52%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 13006,
-            "range": "±6.06%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 13242,
-            "range": "±3.91%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 13683,
-            "range": "±3.82%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 13738,
-            "range": "±4.05%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 13411,
-            "range": "±4.65%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2708,6 +2614,65 @@ window.BENCHMARK_DATA = {
             "range": "±3.80%",
             "unit": "ops/sec",
             "extra": "72 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e1c3cf9c47bfc037182c275f46eef405ef70dca",
+          "message": "devp2p: remove async dep from integration tests (#1875)",
+          "timestamp": "2022-05-03T13:21:17+02:00",
+          "tree_id": "5db995c0ce2f15d580849cc9f9b9c570678a0782",
+          "url": "https://github.com/sambacha/ethereumjs-monorepo/commit/8e1c3cf9c47bfc037182c275f46eef405ef70dca"
+        },
+        "date": 1651885628006,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 18983,
+            "range": "±7.16%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 20077,
+            "range": "±1.85%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 16292,
+            "range": "±15.95%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 19846,
+            "range": "±2.27%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 19564,
+            "range": "±2.31%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
           }
         ]
       }
