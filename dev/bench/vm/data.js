@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1651885628450,
+  "lastUpdate": 1656410376115,
   "repoUrl": "https://github.com/sambacha/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "30843294+Aniket-Engg@users.noreply.github.com",
-            "name": "Aniket",
-            "username": "Aniket-Engg"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6ca7ffdeb880431b39e39df60f27b264553a9ea8",
-          "message": "trie: add try-catch for \"Missing node in DB\" in ReadStream (#1515)",
-          "timestamp": "2021-10-06T08:00:06-07:00",
-          "tree_id": "2f19eea8b1a8ab23e8fc3d04c1d3373500a89c0c",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/6ca7ffdeb880431b39e39df60f27b264553a9ea8"
-        },
-        "date": 1633534433937,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 24561,
-            "range": "±5.95%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 25563,
-            "range": "±2.14%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 19349,
-            "range": "±14.18%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 23069,
-            "range": "±2.52%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 23958,
-            "range": "±2.53%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 22803,
-            "range": "±4.02%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 10959,
-            "range": "±14.36%",
-            "unit": "ops/sec",
-            "extra": "35 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 21109,
-            "range": "±3.45%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 17415,
-            "range": "±12.59%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 10155,
-            "range": "±22.64%",
-            "unit": "ops/sec",
-            "extra": "45 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2673,6 +2579,65 @@ window.BENCHMARK_DATA = {
             "range": "±2.31%",
             "unit": "ops/sec",
             "extra": "74 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c06d9dbd9da7c1febc278e41775b3b16679ccf13",
+          "message": "vm: Fix declaration settings (#1999)",
+          "timestamp": "2022-06-27T14:17:15+02:00",
+          "tree_id": "fb749740071961041d221edac71f1129f167253f",
+          "url": "https://github.com/sambacha/ethereumjs-monorepo/commit/c06d9dbd9da7c1febc278e41775b3b16679ccf13"
+        },
+        "date": 1656410375176,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 22527,
+            "range": "±3.02%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 21384,
+            "range": "±5.70%",
+            "unit": "ops/sec",
+            "extra": "81 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 21350,
+            "range": "±3.06%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 21240,
+            "range": "±3.19%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 17896,
+            "range": "±11.85%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
           }
         ]
       }
